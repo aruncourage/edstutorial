@@ -31,3 +31,11 @@
     order: unset;
   }
 }
+
+.columns a {
+  padding: 1em 2em;
+  text-decoration: none;
+  background-color: cadetblue;
+  color: white;
+  font-size: 14px;
+}
