@@ -3,8 +3,6 @@ This is the codebase for the fictional EDS Tutorial site, demonstrating Adobe's 
 
 Experimentation
 
-Conversion Tracking
-
 Document-Based Content Authoring
 
 🌍 Environments
@@ -15,15 +13,9 @@ Live: https://main--edstutorial--aruncourage.aem.live/
 📁 Repository
 GitHub: https://github.com/aruncourage/edstutorial
 
-📦 Installation
-bash
-Copy
-Edit
-npm i
-aem up
 
 🔑 Prerequisites
-Ensure the **AEM Sidekick Chrome extensio**n is installed.
+Ensure the **AEM Sidekick Chrome extension** is installed.
 
 
 Right-click the Sidekick extension → View document source
@@ -32,13 +24,6 @@ Right-click the Sidekick extension → View document source
 
 # Replace with your fork's live URL
 WKND_URL=https://main--edstutorial--aruncourage.aem.live npm run generate-traffic
-
-# Example: 1000 simulated visits
-WKND_URL=https://main--edstutorial--aruncourage.aem.live ITERATIONS=1000 npm run generate-traffic
-🤖 Slack Bot Integration
-Slack Bot Docs
-
-After setting up conversion tracking, integrate Slack Bot.
 
 
 Authoring Docs
