@@ -1,34 +1,76 @@
-# Your Project's Title...
-Your project's description...
+**Edge Delivery Services – EDS Tutorial Demo**
+This is the codebase for the fictional EDS Tutorial site, demonstrating Adobe's Edge Delivery Services in action. It showcases:
 
-## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+Experimentation
 
-## Documentation
+Conversion Tracking
 
-Before using the aem-boilerplate, we recommand you to go through the documentation on https://www.aem.live/docs/ and more specifically:
-1. [Developer Tutorial](https://www.aem.live/developer/tutorial)
-2. [The Anatomy of a Project](https://www.aem.live/developer/anatomy-of-a-project)
-3. [Web Performance](https://www.aem.live/developer/keeping-it-100)
-4. [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks)
+Document-Based Content Authoring
 
-## Installation
+🌍 Environments
+Preview: https://main--edstutorial--aruncourage.aem.page/
 
-```sh
+Live: https://main--edstutorial--aruncourage.aem.live/
+
+📁 Repository
+GitHub: https://github.com/aruncourage/edstutorial
+
+📦 Installation
+bash
+Copy
+Edit
 npm i
-```
+aem up
 
-## Linting
+🔑 Prerequisites
+Ensure the **AEM Sidekick Chrome extensio**n is installed.
 
-```sh
-npm run lint
-```
 
-## Local development
+Right-click the Sidekick extension → View document source
 
-1. Create a new repository based on the `aem-boilerplate` template and add a mountpoint in the `fstab.yaml`
-1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
-1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
-1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
-1. Open the `{repo}` directory in your favorite IDE and start coding :)
+
+
+# Replace with your fork's live URL
+WKND_URL=https://main--edstutorial--aruncourage.aem.live npm run generate-traffic
+
+# Example: 1000 simulated visits
+WKND_URL=https://main--edstutorial--aruncourage.aem.live ITERATIONS=1000 npm run generate-traffic
+🤖 Slack Bot Integration
+Slack Bot Docs
+
+After setting up conversion tracking, integrate Slack Bot.
+
+
+Authoring Docs
+
+Ensure fstab.yaml points to your SharePoint/Drive folder.
+
+Modify documents in your drive.
+
+Use the AEM Sidekick to Preview and Publish.
+
+Explore:
+
+Anatomy of a Project
+Block Collection
+Query index.xls
+Redirect.xls
+Bulk meta data
+Meta data
+
+💻 Local Development
+Clone your forked repo locally:
+
+git clone https://github.com/aruncourage/edstutorial
+cd edstutorial
+npm i
+npm install -g @adobe/helix-cli
+Opens browser at http://localhost:3000
+
+Start building in your IDE.
+
+📚 Resources
+Adobe Edge Delivery Services
+
+
+
