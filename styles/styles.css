@@ -279,3 +279,26 @@ p.button-container > a.button {
   color: white;
   font-size: 14px;
 }
+#all-article, #next-adventures, #recent-articles, #current-adventures, #faqs, #our-contributors, #wknd-guides {
+  padding-bottom: 8px;
+}
+
+#next-adventures::after,
+#all-article::after,
+#current-adventures::after,
+#faqs::after,
+#wknd-guides::after,
+#our-contributors::after,
+#recent-articles::after {
+  border-bottom: 2px solid var(--brandPrimary, cadetblue);
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 18%;
+}
+#faqs::after{
+  width: 12%;
+}
+#our-contributors::after, #wknd-guides::after{
+  width:25%;
+}
