@@ -1,64 +1,79 @@
-.camper.block > div {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  /* Left content (text, images, etc.) */
-  .camper.block > div > div:first-child {
-    flex: 0 0 60%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 10%;
-  }
-  
-  /* Right side list container */
-  .camper.block > div > div:last-child {
-    flex: 0 0 20%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Optional reset for ul */
-  .camper.block ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .camper.block ul li {
-    color: rgb(32, 32, 32);
-    display: block;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    height: 136px;
-    line-height: 27px;
-    list-style: none;
-    margin: 0 20px 18px 20px; /* 20px left/right, 18px bottom */
-    text-align: left;
-    width: 263px;
-    padding: 10px 15px;
-    border-left: 4px solid #cccccc; /* Default left border */
-    background-color: #ffffff;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-  }
-  
-  /* Hover effect */
-  .camper.block ul li:hover {
-    background-color: lightpink;
-    border-left-color: #0077cc;
-    color: #0077cc;
-    cursor: pointer;
-  }
+/* Reordered selector to come BEFORE .camper.block > div (fix no-descending-specificity) */
+.camper-wrapper > div {
+  padding: 60px 10px;
+}
 
-  .camper-wrapper > div {
-    padding: 60px 10px;
-  }
-  .camper.block h6 {
-    padding: 50px;
-    font-size: 18px;
-  }
-  .camper.block a {
-    text-decoration: none;
-  }
-  
-  
+.camper.block > div {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Left content (text, images, etc.) */
+.camper.block > div > div:first-child {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+/* Right side list container */
+.camper.block > div > div:last-child {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional reset for ul */
+.camper.block ul {
+  padding: 0;
+  margin: 0;
+}
+
+.camper.block ul li {
+  color: rgb(32 32 32); /* modern color-function notation */
+  display: block;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  height: 136px;
+  line-height: 27px;
+  list-style: none;
+  margin: 0 20px 18px;
+  text-align: left;
+  width: 263px;
+  padding: 10px 15px;
+  border-left: 4px solid #ccc; /* shortened hex */
+  background-color: #fff; /* shortened hex */
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Hover effect */
+.camper.block ul li:hover {
+  background-color: cadetblue;
+  border-left-color: #202020;
+  color: white;
+  cursor: pointer;
+}
+
+/* Empty line before rule fixed */
+.camper.block h6 {
+  padding: 50px;
+  font-size: 18px;
+}
+
+/* Empty line before rule fixed and custom property name kebab-case fixed */
+.camper.block a {
+  text-decoration: none;
+  color: var(--text-color, #202020);
+  padding: 5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+li > strong + strong {
+  color: dimgray;
+  font-size: 15px;
+  padding: 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

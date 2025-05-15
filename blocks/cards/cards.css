@@ -12,25 +12,28 @@
   background-color: var(--background-color);
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+body.about-us-page .cards > ul > li {
+  border: none;
+}
+
+.cards-card-image {
+  display: flex;
+  justify-content: center; /* center image horizontally */
+  align-items: center;     /* center vertically if height constrained */
 }
 
 .cards .cards-card-image {
   line-height: 0;
 }
 
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+.cards .cards-card-body {
+  margin: 16px;
 }
 
 .cards > ul > li p {
   font-size: 13px;
   color: cadetblue;
 }
-
 
 .cards > ul > li a:hover {
   text-decoration: none;
@@ -42,7 +45,60 @@
 
 .cards-card-body h5 {
   font-size: 14px;
-  color: teal;
+  color: #202020;
 }
 
+/* This general image rule is scoped to about-us page */
+body.about-us-page .cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
 
+/* More specific picture image style comes AFTER more general img rule */
+body.about-us-page ul > li > .cards-card-image > picture > img {
+  width: 168px !important;
+  height: 168px !important;
+  border-radius: 50% !important;
+  display: block !important;
+  object-fit: cover !important;
+}
+
+.cards-card-social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cards-card-social a.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.cards-card-social a.social-icon svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.cards-card-social a.social-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.center-align {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-border {
+  border: none !important;
+  box-shadow: none;
+}

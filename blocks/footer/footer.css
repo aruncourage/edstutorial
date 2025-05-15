@@ -14,7 +14,7 @@
 /* Handles layout structure */
 .footer > div {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   gap: 20px;
 }
 
@@ -33,6 +33,12 @@
   height: auto;
 }
 
+/* Text and links */
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+
 /* Navigation list styles */
 .footer ul {
   list-style: none;
@@ -47,28 +53,29 @@
   margin: 0;
 }
 
+/* More specific link styling inside list items */
+
+/* Moved before .footer a:hover to fix descending specificity */
 .footer ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* General hover state for all footer links */
+.footer a:hover {
+  color: #fff;
+}
+
 .footer ul li a:hover {
   text-decoration: underline;
 }
 
-/* Text and links */
+
+
+/* Paragraph text */
 .footer p {
   margin: 10px 0;
-}
-
-.footer a {
-  color: #ccc;
-  text-decoration: underline;
-}
-
-.footer a:hover {
-  color: #fff;
 }
 
 /* Heading styles */
@@ -86,10 +93,9 @@
 }
 
 /* Responsive layout for wider screens */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .footer > div {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap; /* shorthand for flex-direction + flex-wrap */
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -100,7 +106,7 @@
   }
 
   .footer .section:nth-child(2) {
-    width: 85%; /* remaining space with a small margin */
+    width: 85%;
   }
 
   .footer .section.copyright {

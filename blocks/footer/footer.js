@@ -18,9 +18,9 @@ export default async function decorate(block) {
 
   block.append(footer);
 
-   // Add class to third .section element
-   const sections = footer.querySelectorAll('.section');
-   if (sections.length >= 3) {
-     sections[2].classList.add('copyright');
-   }
+  // Add class to third .section element
+  const sections = footer.querySelectorAll('.section');
+  if (sections.length >= 3) {
+    sections[2].classList.add('copyright');
+  }
 }

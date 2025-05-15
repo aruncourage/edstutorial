@@ -137,8 +137,6 @@ export default async function decorate(block) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
       if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
       navSection.addEventListener('click', () => {
-        e.preventDefault();
-        console.log(navSection, 'navSection');
         if (isDesktop.matches) {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
           toggleAllNavSections(navSections);
@@ -166,8 +164,6 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 
-
-
   // highlight active nav link
   const currentPath = window.location.pathname;
   const navLinks = nav.querySelectorAll('.nav-sections a');
@@ -179,4 +175,12 @@ export default async function decorate(block) {
     }
   });
 
+  // Search input with search icon inside
+  const navTools = nav.querySelector('.nav-tools');
+  const searchWrapper = document.createElement('div');
+  searchWrapper.className = 'nav-search';
+  searchWrapper.innerHTML = `
+    <input type="text" placeholder="SEARCH" class="nav-search-input" aria-label="Search" />
+  `;
+  navTools.appendChild(searchWrapper);
 }

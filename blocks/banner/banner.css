@@ -1,8 +1,9 @@
 .banner > div {
     display: grid;
     grid-template-areas: "banner";
-    align-items: end;
-    justify-items: center;
+
+    /* Instead of separate align-items and justify-items, use shorthand place-items */
+    place-items: end center;
 }
 
 .banner > div > div {
@@ -11,8 +12,8 @@
 
 /* teaser image */
 .banner > div > div:first-child {
-    height: 40pc;
-    max-height: 40pc;
+    height: 40vh;
+    max-height: 40vh;
     width: 100%;
 }
 
@@ -43,17 +44,20 @@
 
 .banner h2 {
     font-family: var(--body-font-family);
-    margin: .5em 0;
+    margin: 0.5em 0;
 }
 
 .banner h2 a {
-    color: #202020
+    color: #202020;
 }
 
 .banner .button-container a {
     background-color: cadetblue;
     border-radius: unset;
 }
+
+/* Add an empty line before this rule */
+
 #current-adventures {
     margin-top: 50px;
 }
