@@ -31,8 +31,9 @@ body.about-us-page .cards > ul > li {
 }
 
 .cards > ul > li p {
-  font-size: 13px;
-  color: cadetblue;
+  color: #202020;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .cards > ul > li a:hover {
