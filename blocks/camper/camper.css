@@ -71,8 +71,9 @@
 }
 
 li > strong + strong {
+  display: block;
   color: dimgray;
-  font-size: 15px;
+  font-size: 9px;
   padding: 5px;
   text-transform: uppercase;
   white-space: nowrap;

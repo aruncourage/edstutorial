@@ -299,7 +299,7 @@ p.button-container > a.button {
 #next-adventures,
 #recent-articles,
 #current-adventures,
-#faqs,
+#faq,
 #our-contributors,
 #wknd-guides {
   padding-bottom: 8px;
@@ -308,7 +308,7 @@ p.button-container > a.button {
 #next-adventures::after,
 #all-article::after,
 #current-adventures::after,
-#faqs::after,
+#faq::after,
 #wknd-guides::after,
 #our-contributors::after,
 #recent-articles::after {
@@ -319,7 +319,7 @@ p.button-container > a.button {
   width: 18%;
 }
 
-#faqs::after {
+#faq::after {
   width: 12%;
 }
 

@@ -10,14 +10,14 @@
     grid-area: banner;
 }
 
-/* teaser image */
+/* banner image */
 .banner > div > div:first-child {
-    height: 40vh;
-    max-height: 40vh;
+    height: 40pc;
+    max-height: 40pc;
     width: 100%;
 }
 
-/* teaser content */
+/* banner content */
 .banner > div > div:last-child {
     background-color: #fff;
     min-height: 180px;
@@ -44,11 +44,11 @@
 
 .banner h2 {
     font-family: var(--body-font-family);
-    margin: 0.5em 0;
+    margin: .5em 0;
 }
 
 .banner h2 a {
-    color: #202020;
+    color: #202020
 }
 
 .banner .button-container a {
