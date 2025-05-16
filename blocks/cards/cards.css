@@ -69,6 +69,9 @@ body.about-us-page ul > li > .cards-card-image > picture > img {
   display: flex;
   justify-content: center;
   gap: 15px;
+  border: 1px solid;
+  padding: 10px 20px;
+  background: #202020;
 }
 
 .cards-card-social a.social-icon {
